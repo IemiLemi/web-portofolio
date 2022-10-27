@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dark-background);
+    color: var(--dark-heading);
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ion-icon {
+    color: var(--dark-icon);
+    height: 2rem;
+    width: 2rem;
+}
+
+h1 {
+    font-size: var(--fs-m);
+    font-family: var(--font-regular);
+}
+
+h2 {
+    font-size: var(--fs-heading);
+    font-family: var(--font-heading);
+    letter-spacing: 0.2rem;
+}
+
+p {
+    font-size: var(--fs-s);
+    font-family: var(--font-regular);
+    color: var(--dark-paragraph);
+    line-height: 1.5;
+}
+
+.pad {
+    padding: 0 3.2rem;
+}
+
+.max-width {
+    max-width: 100rem;
+}
+
+.marg {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.transition-all {
+    transition: all 0.5s ease-out;
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+    color: var(--dark-icon);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* SUBJECT HEADING */
+
+
+.heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.heading div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-number {
+    color: #111111;
+    font-size: var(--fs-m);
+}
+
+.heading-number::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    padding-bottom: 200%;
+    z-index: -1;
+}
+
+.heading-description {
+    /* position: relative; */
+    font-size: var(--fs-m);
+    margin-left: 2rem;
+}
+
+.heading-dsrp::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -14px;
+    width: 300px;
+    height: 1px;
+}
+
+:root {
+    /* DARK MODE */
+    --dark-background: #111111;
+    --dark-heading: #f9fafb;
+    --dark-paragraph: #D0D0D0;
+    --dark-btn-nav: #444444;
+    --dark-nav-link: #888888;
+    --dark-icon: #f9fafb;
+    /* WHITE MODE */
+    --white-background: #f9fafb;
+    /* GENERAL */
+    font-size: 62.5%;
+    --fs-xxs: 1.2rem;
+    --fs-xs: 1.4rem;
+    --fs-s: 1.6rem;
+    --fs-m: 2.4rem;
+    --fs-l: 3.2rem;
+    --fs-heading: 8rem;
+    --font-regular: "IBM Plex Sans", sans-serif;
+    --font-heading: "Bebas Neue", sans-serif;
+    --gradient-about: linear-gradient(90deg, #595CFF 0%, #C6F8FF 100%);
+    --gradient-work: linear-gradient(90deg, #D4781A 0%, #AA3678 100%);
+    --gradient-projects: linear-gradient(90deg, #E89D1F 0%, #E4E95D 100%);
+    --gradient-contact: linear-gradient(90deg, #1092A0 0%, #74DEEE 100%);
+    --gradient-all: linear-gradient(90deg, #595CFF 0%, #C6F8FF 15.1%, #E89D1F 27.6%, #AA3678 41.15%, #E89D1F 57.29%, #E4E95D 73.44%, #1092A0 86.98%, #74DEEE 98.44%);
+    --border-radius: 2px
+}
